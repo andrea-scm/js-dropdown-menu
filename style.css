@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Montserrat;
+  src: url('fonts/Montserrat-Regular.otf');
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Montserrat;
+}
+
+header{
+  height: 100px;
+  padding: 40px 20px 0 20px;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-left,
+.header-right{
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 35%;
+}
+
+.logo > img{
+  height: 40px;
+}
+
+.menu-content > ul{
+  margin-left: 10px;
+}
+
+ul > li{
+  display: inline-block;
+  margin-left: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: darkgray;
+}
+
+a:hover{
+  cursor: pointer;
+  color: black;
+}
+
+.header-right{
+  float: right;
+  width: 65%;
+  flex-direction: row-reverse;
+}
+
+.main-menu{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-menu > .menu-item > a{
+  margin-left: 40px;
+}
+
+.dropdown-menu{
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 20px 30px;
+  box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.3);
+  display: none;
+}
+.dropdown-menu.active{
+  display: block;
+}
+.dropdown-menu-item{
+  margin-bottom: 20px;
+}
+.dropdown-menu > .dropdown-menu-item:last-child{
+  margin: 0;
+}
+
+.download-button{
+  background-color: #eb008d;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 50px;
+}
+
+.download-button:hover{
+  color: white;
+  opacity: .8;
+}
+
+.fa-sort-down{
+  transform: translate(2px ,-2px);
+}
